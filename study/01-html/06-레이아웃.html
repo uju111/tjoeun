@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃 : html</title>
+    <style>
+        *{
+            padding: 20px;
+        }
+        .wrap {
+            width: 1200px;
+            margin: auto;
+            background-color: rgb(230, 191, 18);
+        }
+        header{
+            display: flex;
+            background-color: rgb(37, 187, 95);
+        }
+        nav{
+            background-color: #fff;
+        }
+        nav > ul{
+            display: flex;
+        }
+        .container{
+            display:flex;
+            background-color: rgb(165, 0, 0);
+        }
+        footer{
+            display: flex;
+            background-color: rgb(0, 61, 192);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrap">
+        <header>헤더
+            <h1>로고</h1>
+            <div class="search">검색</div>
+        </header>
+        <nav>네비게이션
+            <!-- ul>li*3>a{depth1-m$} -->
+            <ul>
+                <li>
+                    <a href="#">menu1</a>
+                    <ul>
+                        <li><a href="#"></a>menu1-1</li>
+                        <li><a href="#"></a>menu1-2</li>
+                        <li><a href="#"></a>menu1-3</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">menu2</a>
+                    <ul>
+                        <li><a href="#">menu2-1</a></li>
+                        <li><a href="#">menu2-2</a></li>
+                        <li><a href="#">menu2-3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">menu3</a>
+                    <ul>
+                        <li><a href="#">menu3-1</a></li>
+                        <li><a href="#">menu3-2</a></li>
+                        <li><a href="#">menu3-3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="container">
+            컨테이너
+            <main>
+                본문 내용
+                <section>
+                    <h2>서브 타이틀</h2>
+                    <div class="cont"></div>
+                        섹션내용
+                </section>
+                <article>
+                    <h2>서브타이틀</h2>
+                    <div class="cont"></div>
+                        아티클 내용
+                </article>
+            </main>
+            <aside>사이드내용</aside>            
+        </div> 
+        <br>
+        <footer>
+            풋터
+            <h1>풋터 로고</h1>
+            <address>
+                부천시 상동로 메가플러스 <br>
+                <a href="tel:032-322-3344">032-322-3344</a>
+                <a href="mailto:eehd10@naver.com">eehd10@naver.com</a>
+            </address>
+        </footer>
+    </div>
+
+
+
+
+
+</body>
+</html>

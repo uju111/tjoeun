@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form : html</title>
+</head>
+
+<body>
+    <h1>form</h1>
+
+    <form action="" method="get">
+        <fieldset>
+            <legend>회원가입</legend>
+
+            <dl>
+                <dt><label for="ID">1. text</label> </dt>
+                <dd><input type="text" name="ID" id="ID"></dd>
+                
+                <dt><label for="pw"> 2. password</label></dt>
+                <dd><input type="password" name="pw" id="pw"></dd>
+                
+                <dt><label for="sch"> 3. search></label></dt>
+                <dd> <input type="search" id="sch"> </dd>
+               
+                <dt><label for="email"> 4. email</label></dt>
+                <dd><input type="email" name="" id="email"></dd>
+               
+                <dt><label for="tel"> 5. tel</label></dt>
+                <dd><input type="tel" name="" id="tel"></dd>
+                
+                <dt><label for="color"> 6. color</label></dt>
+                <dd><input type="color" name="" id="color"></dd>
+                
+                <dt><label for="range"> 7. range</label></dt>
+                <dd><input type="range" name="" id="range"></dd>
+                
+                <dt>8. radio</dt>  
+                <dd>
+                    <input type="radio" name="sex" id="sex1" checked><label for="sex1"> 남성</label>
+                    <input type="radio" name="sex" id="sex2"><label for="sex2"> 여성</label>
+                </dd>
+                
+                <dt>9. checkbox</dt>
+                <dd>
+                    <input type="checkbox" name="skill" id="skill1"><label for="skill1">photoshop</label>
+                    <input type="checkbox" name="skill" id="skill2"><label for="skill2">illustrator</label>
+                    <input type="checkbox" name="skill" id="skill3"><label for="skill3">XD</label>
+                </dd>
+                
+                <dt>10. number</dt>
+                <dd><input type="number" min="10" max="20" name="" id=""></dd>
+
+                <dt>11.submit (정보 전송)</dt>
+                <dd>
+                    <!-- 로그인, 회원가입 등 서버로 정보를 보낼 때 사용 --> 
+                    <input type="submit" value="정보전송"></dd>
+                <!-- 단순한 페이지 전환 -->
+                <a href="#">링크</a>
+
+                <dt>12. button</dt>
+                <dd>
+                    <!-- 스크립트 링크처리 -->
+                    <button>확인</button>
+                <input type="button" onclick="alert('Hello World!')"  value="확인">
+                </dd>
+
+                <dt>13. image 버튼</dt>
+                <dd><input type="image" src="./images/네이버.png" alt="네이버로그인" ></dd>
+                
+                <dt>14. reset</dt>
+                <dd><input type="reset" value="취소"></dd>
+                
+                <dt>15. 첨부파일</dt>
+                <dd><input type="file" name="" id=""></dd>
+               
+                <dt>16. textarea</dt>
+                <dd><textarea name="" id="" cols="30" rows="10"></textarea></dd>
+                
+                <dt><label for="phonenumber"> 17.select</label></dt>
+                <dd>
+                     <select name="" id="phonenumber">
+                    <option value="통신사 선택">통신사 선택</option>
+                    <option value="010">010</option>
+                    <option value="011"selected>011</option>
+                    <option value="016">016</option>
+                </select>
+                <!-- palceolder 예시 / value 진짜 값 -->
+                 - <input type="tel" maxlength="4" placeholder="1234"  name="" id="" title="번호 가운데자리">
+                 - <input type="tel" maxlength="4"value="5678"name="" id=""title= "번호 뒷자리">
+            </dd>
+            </dl>
+
+
+        </fieldset>
+    </form>
+
+
+<br><br><br><br>
+</body>
+
+</html>
